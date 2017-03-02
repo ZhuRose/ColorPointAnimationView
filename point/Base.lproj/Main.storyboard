@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0t-f1-e7Y" customClass="ColorPointAnimationView">
+                                <rect key="frame" x="0.0" y="93" width="375" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zMy-o2-3Ul"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETW-xo-Elk">
+                                <rect key="frame" x="0.0" y="494" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.4549019608" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="平缓移动">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="64c-uq-9c6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5Q-td-kQt">
+                                <rect key="frame" x="0.0" y="541" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.4549019608" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="拉伸">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L69-HZ-pv9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zow-hN-Lqg">
+                                <rect key="frame" x="0.0" y="588" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.4549019608" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="旋转">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Boe-Bd-qAm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXQ-YL-teX">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.4549019608" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="停止旋转并平缓移动">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g6U-XC-ItL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB5-eX-HuO">
+                                <rect key="frame" x="0.0" y="440" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.4549019608" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="停止动画">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Sr-z6-QGY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TB5-eX-HuO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2PQ-mG-PNw"/>
+                            <constraint firstItem="ETW-xo-Elk" firstAttribute="top" secondItem="TB5-eX-HuO" secondAttribute="bottom" constant="24" id="864-xT-ffF"/>
+                            <constraint firstAttribute="trailing" secondItem="O5Q-td-kQt" secondAttribute="trailing" id="8wi-CJ-Twz"/>
+                            <constraint firstAttribute="trailing" secondItem="zow-hN-Lqg" secondAttribute="trailing" id="9sA-oA-Rqr"/>
+                            <constraint firstAttribute="trailing" secondItem="TB5-eX-HuO" secondAttribute="trailing" id="CRu-fV-HMP"/>
+                            <constraint firstItem="LXQ-YL-teX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LlP-7w-ebx"/>
+                            <constraint firstItem="zow-hN-Lqg" firstAttribute="top" secondItem="O5Q-td-kQt" secondAttribute="bottom" constant="17" id="UTE-Q3-ae5"/>
+                            <constraint firstItem="O5Q-td-kQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UlJ-xA-3mE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LXQ-YL-teX" secondAttribute="bottom" id="VN1-KG-iFz"/>
+                            <constraint firstItem="O5Q-td-kQt" firstAttribute="top" secondItem="ETW-xo-Elk" secondAttribute="bottom" constant="17" id="YyX-bp-2l8"/>
+                            <constraint firstItem="ETW-xo-Elk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bI8-i8-HSC"/>
+                            <constraint firstItem="LXQ-YL-teX" firstAttribute="top" secondItem="zow-hN-Lqg" secondAttribute="bottom" constant="19" id="baM-Im-IhO"/>
+                            <constraint firstItem="s0t-f1-e7Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dyD-rG-toK"/>
+                            <constraint firstAttribute="trailing" secondItem="LXQ-YL-teX" secondAttribute="trailing" id="eQr-cH-p0P"/>
+                            <constraint firstItem="zow-hN-Lqg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k4y-MG-Jne"/>
+                            <constraint firstAttribute="trailing" secondItem="ETW-xo-Elk" secondAttribute="trailing" id="l6J-7Y-TLs"/>
+                            <constraint firstAttribute="trailing" secondItem="s0t-f1-e7Y" secondAttribute="trailing" id="qcP-1K-qNL"/>
+                            <constraint firstItem="s0t-f1-e7Y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="73" id="wTj-gb-jL0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cView" destination="s0t-f1-e7Y" id="pfd-f6-Dgv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
